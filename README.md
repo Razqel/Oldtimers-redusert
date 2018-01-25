@@ -1,0 +1,2 @@
+# Oldtimers-redusert
+Skole
