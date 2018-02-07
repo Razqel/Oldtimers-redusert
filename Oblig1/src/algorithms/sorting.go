@@ -2,17 +2,18 @@ package algorithms
 
 
 // Les https://en.wikipedia.org/wiki/Bubble_sort
-func BubbleSortModified(list []int) {
-	n := len(list)
+func BubbleSortModified(numbers []int) {
+	n := len(numbers)
 	for i := 0; i < n; i++ {
 		for j := 0; j < n-1; j++ {
-			if list[i] > list[j] {
-				temp := list[i]
-				list[i] = list[j]
-				list[j] = temp
+			if numbers[i] > numbers[j] {
+				temp := numbers[i]
+				numbers[i] = numbers[j]
+				numbers[j] = temp
 			}
 		}
 	}
+	n = n - 1
 }
 
 

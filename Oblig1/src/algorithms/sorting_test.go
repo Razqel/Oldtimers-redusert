@@ -43,6 +43,8 @@ func benchmarkBSortModified(i int, b *testing.B) {
 		}
 }
 
+// koder fra før
+
 func BenchmarkBSort100(b *testing.B) {
 	benchmarkBSort(100, b)
 }
