@@ -2,8 +2,8 @@ package main
 
 import ("fmt"
 "os"
-	"os/signal"
-	"log"
+"os/signal"
+"log"
 )
 
 func main() {
