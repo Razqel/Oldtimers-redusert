@@ -24,7 +24,7 @@ func IterateOverASCIIStringLiteral(sl string) {
 	}
 }
 
-// Kode for Oppgave 2b
+// Kode for Oppgave 4b
 func ExtendedASCIIText() {
 	const dollar = "\x80\xF7\xBE\x64\x6F\x6C\x6C\x61\x72"
 
