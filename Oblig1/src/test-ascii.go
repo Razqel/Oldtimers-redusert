@@ -20,10 +20,10 @@ func main() {
 		fmt.Printf("%b", hexa[i])
 		fmt.Println()
 	}
-	euro := 0x80
-	delt := 0xF7
-	trekvart := 0xBE
-	fmt.Printf("%c", euro)
-	fmt.Printf("%c", delt)
-	fmt.Printf("%c dollar", trekvart)
+	const dollar = "\x80\xF7\xBE\x64\x6F\x6C\x6C\x61\x72"
+
+	for i := 0; i < len(dollar); i++ {
+		fmt.Printf("%c", dollar[i])
+	}
+
 }
