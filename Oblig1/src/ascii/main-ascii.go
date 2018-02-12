@@ -23,9 +23,9 @@ func main() {
 		fmt.Println()
 	}
 	const dollar = "\x80\xF7\xBE\x64\x6F\x6C\x6C\x61\x72"
-
+	fmt.Println()
 	for i := 0; i < len(dollar); i++ {
 		fmt.Printf("%c", dollar[i])
 	}
-
+fmt.Println()
 }
