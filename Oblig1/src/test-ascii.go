@@ -20,4 +20,10 @@ func main() {
 		fmt.Printf("%b", hexa[i])
 		fmt.Println()
 	}
+	euro := 0x80
+	delt := 0xF7
+	trekvart := 0xBE
+	fmt.Printf("%c", euro)
+	fmt.Printf("%c", delt)
+	fmt.Printf("%c dollar", trekvart)
 }
