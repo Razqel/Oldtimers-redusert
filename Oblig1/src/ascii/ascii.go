@@ -12,6 +12,7 @@ const string = "\x80\x81\x82\x83\x84\x85\x86\x87\x88\x89\x8a\x8b\x8c\x8d\x8e\x8f
 	"\xe0\xe1\xe2\xe3\xe4\xe5\xe6\xe7\xe8\xe9\xea\xeb\xec\xed\xee\xef"+
 	"\xf0\xf1\xf2\xf3\xf4\xf5\xf6\xf7\xf8\xf9\xfa\xfb\xfc\xfd\xfe\xff"
 
+
 func IterateOverASCIIStringLiteral(sl string) {
 
 	sl = string
@@ -25,7 +26,9 @@ func IterateOverASCIIStringLiteral(sl string) {
 }
 
 // Kode for Oppgave 4b
-func ExtendedASCIIText() {
+func ExtendedASCIIText(sl string) {
+	sl = "÷¾dollar"
+
 	const dollar = "\x80\xF7\xBE\x64\x6F\x6C\x6C\x61\x72"
 
 	for i := 0; i < len(dollar); i++ {
