@@ -22,8 +22,6 @@ func leserFilInfo() {
 		fmt.Println("Is a directory\nIs not a regular file\nIs not a device file\nIs not a symbolic link")
 	case mode&os.ModeSymlink != 0:
 		fmt.Println("Is not a directory\nIs not a regular file\nIs not a device file\nIs a symbolic link")
-	case mode&os.ModeNamedPipe != 0:
-		fmt.Println("Is a named pipe")
 	case mode&os.ModeDevice != 0:
 		fmt.Println("Is not a directory\nIs not a regular file\nIs a device file\n is not a symbolic link")
 	}
