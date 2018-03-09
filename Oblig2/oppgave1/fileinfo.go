@@ -17,11 +17,11 @@ func leserFilInfo() {
 	switch mode := fi.Mode(); {
 
 	case mode.IsRegular():
-		fmt.Println("Is a regular file")
+		fmt.Println("Is not a directory\nIs a regular file\nIs not a symoblic link")
 	case mode.IsDir():
-		fmt.Println("Is a directory")
+		fmt.Println("Is a directory\nIs not a regular file\nIs not a symbolic link")
 	case mode&os.ModeSymlink != 0:
-		fmt.Println("Is symbolic link")
+		fmt.Println("Is not a directory\nIs not a regular file\nIs a symbolic link")
 	case mode&os.ModeNamedPipe != 0:
 		fmt.Println("Is a named pipe")
 	}
@@ -55,16 +55,15 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("Information about file:", fileInfo.Name())
+	fmt.Println("\nInformation about file", fileInfo.Name(), ":\n")
 	fmt.Println("Size in bytes:", fileInfo.Size(),"- in KB:", fileInfo.Size()/1024,
 		"- in MB:", fileInfo.Size()/1048576, "- in GB:", fileInfo.Size()/1073741824)
-	fmt.Println("Is Directory: ", fileInfo.IsDir())
-	/*isRegular()*/
-	fmt.Println("Permissions:", fileInfo.Mode())
-	fmt.Println("Is Append: ", isAppendAble())
-	fmt.Println("Last modified:", fileInfo.ModTime())
+	//fmt.Println("Is a directory: ", fileInfo.IsDir())
 	leserFilInfo()
+	fmt.Println("Has Unix permission bits:", fileInfo.Mode())
+	fmt.Println("Is append only: ", isAppendAble())
 	fmt.Printf("System interface type: %T\n", fileInfo.Sys())
+	fmt.Println("\nLast modified:", fileInfo.ModTime())
 	fmt.Printf("System info: %+v\n\n", fileInfo.Sys())
 
 }
