@@ -17,11 +17,11 @@ func scanNumberOfLines() { // counts number of lines
 	for fileScanner.Scan() {
 		lineCount++
 	}
-	fmt.Println("Number of lines in file:", lineCount)
+	fmt.Println("\nNumber of lines in file:", lineCount, "\n")
 }
 
 func scanNumberOfRunes(runes string) { // counts number of runes
-	fmt.Println("Rune count from file: ", len([]rune(runes)))
+	fmt.Println("Total runes in file: ", len([]rune(runes)))
 }
 
 func dupCount(list []rune) map[string] int {
@@ -78,6 +78,14 @@ func main() {
 	// sorting - highest number first (the one with most occurrences being first)
 	sort.Sort(sort.Reverse(sort.IntSlice(keys)))
 
+	//print name of file
+	fmt.Println("\nInformation about", input)
+
+
+	// print number of lines
+	scanNumberOfLines()
+
+
 	// print 5 most common runes
 	fmt.Println("Most common runes: ")
 	fmt.Println()
@@ -95,10 +103,10 @@ func main() {
 	// new line
 	fmt.Println()
 
-	// print number of lines
-	scanNumberOfLines()
 	// print number of runes
 	scanNumberOfRunes(str)
+
+	fmt.Println()
 
 
 }
