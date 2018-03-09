@@ -64,8 +64,6 @@ func main() {
 	leserFilInfo()
 	fmt.Println("Has Unix permission bits:", fileInfo.Mode())
 	fmt.Println("Is append only: ", isAppendAble())
-	fmt.Printf("\nSystem interface type: %T\n", fileInfo.Sys())
-	fmt.Println("Last modified:", fileInfo.ModTime())
-	fmt.Printf("System info: %+v\n\n", fileInfo.Sys())
+
 
 }
