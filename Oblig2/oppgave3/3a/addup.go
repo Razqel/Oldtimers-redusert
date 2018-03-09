@@ -16,10 +16,12 @@ func main() {
 	input := os.Args[1]
 	input2 := os.Args[2]
 	tall1, err := strconv.Atoi(input)
+	//Metode som gir feilmelding når input er noe annet enn tall
 	if (err != nil) {
 		fmt.Print("Ugyldig input, skriv inn tall ")
 	}
 	tall2, err := strconv.Atoi(input2)
+	//Metode som gir feilmelding når input er noe annet enn tall
 	if (err != nil) {
 		fmt.Print("Ugyldig input, skriv inn tall ")
 	}
@@ -28,6 +30,7 @@ func main() {
 	v1 := <-fooVal
 	fmt.Println(v1)
 
+	//SIGINT funksjon som gir beskjed når signal avventes og avsluttes.
 	sigs := make(chan os.Signal, 1)
 	done := make(chan bool)
 	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
