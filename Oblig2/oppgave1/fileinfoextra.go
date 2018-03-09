@@ -39,15 +39,15 @@ func isAppendAble() bool {
 	} else {
 		appendAble = true
 	}
-		defer f.Close() //lukker fila
+	defer f.Close() //lukker fila
 
-		return appendAble // returnerer appendable-variablen (som viser hvorvidt status på fila er appendable/skrivbar)
+	return appendAble // returnerer appendable-variablen (som viser hvorvidt status på fila er appendable/skrivbar)
 
 }
 
 func main() {
 	input := os.Args[1] 	//input, aka fila vi skal "Scanne"
-		var (
+	var (
 		fileInfo os.FileInfo
 		err      error
 	)
