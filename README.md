@@ -3,7 +3,7 @@ Medlemmer:
 *Yaguel van der Meij
 *Vegard Trydal 
 *Vegard Marvik
-*Andreas ...
+*Andreas Mönster
 *Xohan Barbosa
 
 Skole
