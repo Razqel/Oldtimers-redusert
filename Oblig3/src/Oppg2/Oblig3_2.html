@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Template for "oblig 3_2" 
+Made by Oldtimers-redusert: Yaguel van der Meij, Andreas Wöllert, Xohan Otero Barbosa, Vegard Trydal, Vegard Marvik.
+-->
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+        <link rel="stylesheet" href="FormStyle.css">
+        <title>Template for Oblig3_2 </title>
+	<style>
+	div.container {
+                width: 100%;
+                border: 1px solid gray;
+	}
+	header, footer {
+    	padding: 1em;
+    	color: white;
+    	background-color: #800000;
+    	clear: left;
+    	text-align: center;
+	}
+	form {
+    	text-align: center;
+	}
+	body {
+    	text-align: center;
+    	font-family: 'Amatic SC';font-size: 29px;
+    	}
+	</style>
+    	</head>
+    		<body>
+        		<header><h1>Oldtimers-redusert</h1></header>
+        		<p><b>Artist Name</b> {{.Name}}</p>
+			<p><b>Id: </b> {{.Id}}</p>
+			<p><b>The official link: </b>{{.Uri}}</p>
+			<p><b>Other links with information: </b>{{.Urls}}</p>
+			<p><b>Resource URL: </b>{{.Resource_url}}</p>
+			<p><b>Release URL: </b>{{.Releases_url}}</p>
+			<p><b>Real Name: </b>{{.Realname}}</p>
+			<p><b>Profile: </b>{{.Profile}}</p>
+			<p><b>Data quality: </b>{{.Data_quality}}</p>
+			<p><b>Name variations: </b>{{.Namevariations}}</p>
+            		<footer>Copyright ©Yaguel van der Meij, Andreas Wöllert, Xohan 				Otero Barbosa, Vegard Trydal, Vegard Marvik™</footer>
+        		</div>
+    		</body>
+	</html>
