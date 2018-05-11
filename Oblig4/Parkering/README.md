@@ -23,4 +23,4 @@ Det blir sendt en request til APIen når den blir åpnet, og hvert andre minutt 
 Konsolidering Serveren skal hente data hvert andre minutt fra Stavanger parkerings api og skrive med tekst hvor mange ledige plasser det er igjen og vise på kart gjennom googles kart api hvor de ulike parkeringsplassene er. Dette skal da gjøre det lett for bruker å kunne se og velge hvor han skal parkere. 
 Nedenfor en illustrasjon som viser logikken, både ved henting og sending av data. 
 
-![Systemarkitektur](https://github.com/Razqel/Oldtimers-redusert/blob/Oblig4/Parkering/Bilde/Structurestv.png)
+![Systemarkitektur](https://github.com/Razqel/Oldtimers-redusert/blob/master/Oblig4/Parkering/Bilde/Structurestv.png)
